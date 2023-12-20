@@ -1,0 +1,33 @@
+<div class="list-container">
+  <section>
+    <input type="text" [(ngModel)]="newTodoTitle" />
+    <button (click)="addTodoAction()">Add</button>
+  </section>
+  <section>
+    <div class="todo-item" *ngFor="let todo of todoList$ | async">
+      <span
+        [ngStyle]="{
+          'text-decoration': todo.completed ? 'line-through' : 'none'
+        }"
+        >{{ todo.title }}</span
+      >
+      <div>
+        <button
+          *ngIf="!todo.completed"
+          class="primary"
+          (click)="markTodoAsDoneAction(todo)"
+        >
+          Done
+        </button>
+        <button
+          *ngIf="todo.completed"
+          class="secondary"
+          (click)="markTodoAsUndoneAction(todo)"
+        >
+          Undo
+        </button>
+        <button class="delete" (click)="deleteTodoAction(todo)">Delete</button>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,50 @@
+.list-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+
+    input {
+        width: 20rem;
+    }
+
+    .todo-item {
+        border : 1px solid grey;
+        padding: 7px;
+        margin: 7px;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        button {
+            margin-left: 7px
+        }
+    }
+
+    button.delete {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 7px;
+        cursor: pointer;
+    }
+
+    button.primary {
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 7px;
+        cursor: pointer;}
+
+    button.secondary {
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 7px;
+        cursor: pointer;
+    }
+}

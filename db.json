@@ -1,0 +1,19 @@
+{
+  "todo": [
+    {
+      "id": 3,
+      "title": "Learn Angular",
+      "completed": false
+    },
+    {
+      "id": 0.7208656043716708,
+      "title": "Learn NgRx Store Component",
+      "completed": false
+    },
+    {
+      "id": 0.33674672229012037,
+      "title": "Subscribe to this channel ",
+      "completed": false
+    }
+  ]
+}
